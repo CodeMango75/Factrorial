@@ -1,0 +1,21 @@
+#Creating Factorial of A Number 
+
+#taking input from User
+num = int(input("Enter a number: "))
+fact = 1 #Declaration of Fact
+
+#If User Input is a negative Number
+if num < 0:
+  print("Sorry, Negative Numbers cannot be Factorialized")
+#If User Input is 0
+elif num == 0:
+  print("Factorial of 0 is 1")
+#If User Input is a Positive Number  
+else:
+  for i in range(1, num + 1): #i an iterable object in 1 - user input, incremented by 1
+    fact *= i 
+  print("Factorial of ", num , " is ", fact)
+
+
+
+
